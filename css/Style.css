@@ -1,0 +1,314 @@
+body {
+	font-family: 'Courier', sans-serif;
+	line-height: 1;
+	background-color: #f3f3f3;
+}
+
+header{
+	display:flex;
+	flex-direction: row;
+	font-family: 'Source Code Pro', monospace;
+}
+h1{
+	font-weight: bold;
+	font-size: 40px;
+	color: #14213d;
+	padding: 40px 0px 40px 70px;
+	
+}
+
+#logoAlura{
+	width: 2em;
+	height: 2.5em;
+	margin:60px 100px 30px 880px;
+}
+
+main{
+	display: flex;
+    flex-direction: row;
+}
+
+#sin-mensaje {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    color: #14213d;
+}
+
+#copiar-mensaje {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.info {
+	display: flex;
+    flex-direction: row;
+	color: #FFFFFF;
+	padding-top: 200px;
+	font-size: small;
+}
+
+.info h3{
+	margin-left: 1em;
+}
+
+.botones{
+	display: flex;
+	width: 40%;
+	margin-top: 30px;
+	position: relative;
+	flex-direction: row;
+	margin-left: 6rem;
+
+}
+
+.botones button{
+	background: none;
+    color:#fca311;
+    border: 2px solid;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+    border-radius: 3em;
+	cursor: pointer;
+}
+
+.botones .botonEncriptar{
+	margin: auto;
+	background: #fca311;
+    color:#14213d;
+	border-color: #fca311;
+	margin-right: 5em;
+}
+
+.botonEncriptar:active{
+	background: #14213d;
+    color:#fca311;
+	border-color: #fca311;
+}
+
+.botonDesencriptar:active{
+	background: #fca311;
+    color:#14213d;
+	border-color: #fca311;
+}
+
+#textoIngresado{
+	background-color: #14213d;
+	color: #FFFFFF;
+	border-bottom-color: rgba(0,0,0,.42);
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .009375em;
+	text-decoration: inherit;
+	text-transform: lowercase;
+	align-self: flex-end;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px 16px 6px;
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 4px 4px 0 0;
+	height: 56px;
+}
+
+#textoIngresado:focus{
+	outline: none;
+}
+
+.areaTexto {
+	background-color: #14213d;
+	border-radius: 10px;
+    padding: 25px 25px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	margin: 0 0 20px 65px;
+}
+
+.areaResultado {
+	background-color: #fca311;
+	border-radius: 10px;
+    padding: 25px 25px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	margin: 0px 20px 20px 30px;
+}
+
+#textoResultado{
+	background-color: #fca311;
+	color: #14213d;
+	border-bottom-color: #000000;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .009375em;
+	text-decoration: inherit;
+	text-transform: lowercase;
+	align-self: flex-end;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px 16px 6px;
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 4px 4px 0 0;
+	height: 56px;
+}
+
+#textoResultado:focus{
+	outline: none;
+}
+
+#boton-copiar{
+	background: none;
+    color:#14213d;
+    border: 2px solid;
+    padding: 10px;
+    font-size: 1em;
+    transition: all 0.25s;
+    border-radius: 3em;
+	margin-top: 240px;
+	cursor: pointer;
+}
+
+footer{
+	display: flex;
+	font-size: 10px;
+	text-align: center;
+	margin-left: 48em;
+	padding-top: 2em;
+	color: #000000;
+}
+
+/*---mediaqueries---*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	header{
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	#logoAlura{
+		margin:40px auto 20px;
+		padding-left: 0;
+	}
+
+	header h1{
+		width: 300px;
+		padding:0;
+		margin: 0 0 20px 0px;
+		font-size: 25px;
+		text-align: center;
+	}
+
+	main{
+		flex-direction: column;
+	}
+
+	.areaTexto, .areaResultado{
+        width: 80%;
+		margin:0.5em 1em;
+	}
+
+    .botones{
+	    flex-direction: column;
+		align-items: center;
+		margin: 0;
+		
+    }
+
+	.botones button{
+		padding: 8px 100px;
+		margin: 10px 10px 10px 210px;
+		
+	}
+
+	.botones .botonEncriptar{
+		padding: 8px 110px;
+		margin: 20px 10px 10px 210px;
+	}
+
+	footer{
+		margin: 0 10px;
+	}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:1200px){
+	
+	header{
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	#logoAlura{
+		margin:40px auto 20px;
+		padding-left: 0;
+	}
+
+	header h1{
+		width: 400px;
+		padding:0;
+		margin: 0 0 20px 40px;
+		font-size: 30px;
+	}
+
+	main{
+		flex-direction: column;
+	}
+
+	.areaTexto, .areaResultado{
+        width: 80%;
+		margin-left:50px;
+	}
+
+    .botones{
+	    flex-direction: row;
+		align-items: center;
+		margin: 0;
+		
+    }
+
+	.botones button{
+		padding: 8px 100px;
+		margin: 20px 10px 10px 20px;
+	}
+
+	.botones .botonEncriptar{
+		padding: 8px 110px;
+		margin: 20px 10px 10px 20px;
+	}
+
+	footer{
+		margin: 0 200px;
+	}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.botones button{
+		padding: 8px 100px;
+		margin: 20px 10px 10px 10px;
+	}
+
+	.botones .botonEncriptar{
+		padding: 8px 110px;
+		margin: 20px 10px 10px 10px;
+	}
+}
+/* Large devices (laptops/desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+
+    #logoAlura{
+		margin: 60px 100px 30px 800px;
+    }
+
+	.botones{
+		margin-left: 80px;
+	}
+
+}

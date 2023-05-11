@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/Reset.css">
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@800&display=swap" 
+	rel="stylesheet">
+	<title>Encriptador de Texto</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>Encriptador de texto</h1>
+		<img id="logoAlura" src="img/Vector.png" alt="logoAlura">
+	</header>
+	<main>
+
+		<section class="areaTexto">
+			<textarea id="textoIngresado" cols="30" rows="10" autofocus placeholder="Ingrese su texto aqui"></textarea>
+			<section class="info">
+				<h3>&#x1F6C8   Solo letras minusculas y sin acentos</h3>
+			</section>
+			<div class="botones">
+				<button class="botonEncriptar" onclick="encriptar()">Encriptar</button>
+				<button class="botonDesencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
+			</div>
+		</section>
+
+		<section class="areaResultado">
+			<textarea id="textoResultado" placeholder="El resultado aparecera aquí" readonly></textarea>
+
+			<div id="sin-mensaje">
+				<img src="img/no-mensaje.png" alt="No se encontro ningun texto" width="20"><br>
+				<p>No se encontro ningun texto, ingresa el texto que quieres Encriptar o Desencriptar</p>
+			</div>
+
+			<div id="copiar-mensaje">
+				<img src="img/copiado.png" alt="Texto copiado" width="20"><br>
+				<p>Texto copiado al porta papeles!</p>
+			</div>
+
+			<button id="boton-copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy DEVELOPED BY PAULA ORJUELA 2023 - CHALLENGE 01 ALURA X ORACLE ONE</p>
+	</footer>
+
+	<script src="js/funcion-encriptar.js"></script>
+	<script src="js/funcion-desencriptar.js"></script>
+	<script src="js/funcion-copiar.js"></script>
+
+</body>
+
+</html>
